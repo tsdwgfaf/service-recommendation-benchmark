@@ -1,0 +1,10 @@
+_target_: src.datamodules.mashup_lda_datamodule.MashupLdaDataModule
+
+data_dir: ${data_dir} # data_dir is specified in config.yaml
+data_name: 'api_mashup'
+model_dir: 'pre_model'
+model_name: 'lda'
+train_val_test_split: [3174, 907, 454] # 7: 2: 1
+batch_size: 64
+num_workers: 0
+pin_memory: False

@@ -1,0 +1,9 @@
+_target_: src.models.glove_baseline_model.GloveBaseLineModel
+
+data_dir: ${data_dir} # data_dir is specified in config.yaml
+data_name: 'api_mashup'
+api_feature_name: 'api_feature.pt'
+dim_mashup_feature: 300
+dim_api_feature: 300
+lr: 0.001
+weight_decay: 0.0005

@@ -1,0 +1,11 @@
+_target_: src.models.t2l2_model.T2L2Model
+
+data_dir: ${data_dir}
+data_name: api_mashup
+dim_word: 300
+num_token: 80
+dim_mashup: 768
+dim_service: 128
+lr: 0.0001
+weight_decay: 0.0005
+pre_model: 'GloVe'

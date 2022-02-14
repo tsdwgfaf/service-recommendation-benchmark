@@ -1,0 +1,15 @@
+_target_: src.models.apiprefer_model.APIPreferModel
+
+data_dir: ${data_dir}
+data_name: 'api_mashup'
+api_description_data_name: api_description.json
+mashup_description_data_name: mashup_description.json
+interaction_data_name: user_item_interaction_matrix.pt
+model_dir: pre_model
+model_name: lda
+num_similar_mashup: 200
+hp_epsilon: 0.86
+hp_eta: 0.92
+
+lr: 0.001
+weight_decay: 0.001

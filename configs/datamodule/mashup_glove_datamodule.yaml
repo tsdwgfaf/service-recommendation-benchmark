@@ -1,0 +1,14 @@
+_target_: src.datamodules.mashup_glove_datamodule.MashupGloveDataModule
+
+data_dir: ${data_dir} # data_dir is specified in config.yaml
+data_name: 'api_mashup'
+
+mashup_title_name: 'mashup_title.json'
+mashup_feature_name: 'mashup_feature.pt'
+related_api_name: 'mashup_related_api.json'
+api_title_name: 'api_title.json'
+
+train_val_test_split: [3140, 897, 449] # 7: 2: 1
+batch_size: 64
+num_workers: 0
+pin_memory: False

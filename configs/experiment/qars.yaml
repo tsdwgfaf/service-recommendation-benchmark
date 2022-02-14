@@ -1,0 +1,17 @@
+# @package _global_
+
+# to execute this experiment run:
+# python run.py experiment=qars.yaml
+
+defaults:
+  - override /trainer: default.yaml
+  - override /model: qars_model.yaml
+  - override /datamodule: mashup_api_matrix_datamodule.yaml
+  - override /callbacks: wandb_without_metric.yaml
+  - override /logger: wandb.yaml
+
+seed: 12345
+
+logger:
+  wandb:
+    name: 'QARS'

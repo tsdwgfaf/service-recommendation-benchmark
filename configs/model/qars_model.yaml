@@ -1,0 +1,11 @@
+_target_: src.models.qars_model.QARSModel
+
+data_dir: ${data_dir}
+data_name: 'api_mashup'
+model_dir: 'pre_model'
+model_name: 'hdp'
+dim_feature: 100
+num_sims_api: 50
+hp_lam_alpha: 0.75
+hp_lam_beta: 0.75
+lr: 0.001

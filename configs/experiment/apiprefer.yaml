@@ -1,0 +1,17 @@
+# @package _global_
+
+# to execute this experiment run:
+# python run.py experiment=apiprefer.yaml
+
+defaults:
+  - override /trainer: default.yaml
+  - override /model: apiprefer_model.yaml
+  - override /datamodule: mashup_lda_datamodule.yaml
+  - override /callbacks: wandb.yaml
+  - override /logger: wandb.yaml
+
+seed: 12345
+
+logger:
+  wandb:
+    name: 'API_Prefer'

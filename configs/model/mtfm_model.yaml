@@ -1,0 +1,11 @@
+_target_: src.models.mtfm_model.MTFMModel
+
+text_len: 80
+embedding_size: 300
+num_api: 971
+conv_kernel_size_tuple: [2, 3, 4, 5]
+conv_num_kernel: 256
+feature_dim: 8
+top_k_list: [1, 5, 10, 15, 20, 25, 30]
+lr: 0.001
+weight_decay: 0.0005

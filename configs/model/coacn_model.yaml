@@ -1,0 +1,19 @@
+_target_: src.models.coacn_model.COACNModel
+
+data_dir: ${data_dir}
+data_name: 'api_mashup'
+data_name_mashup_embedding: mashup_embedding_word2vec.pt
+data_name_domain_embedding: domain_embedding_word2vec.pt
+data_name_api_embedding: api_embedding_word2vec.pt
+data_name_inter_matrix: user_item_interaction_matrix.pt
+len_text: 100
+dim_word_embedding: 300
+dim_embedding: 300
+
+hp_beta: 0.6
+hp_lambda: 0.001
+hp_num_gcn_layer: 2
+hp_weight_gcn_layer: [0.5, 0.5]
+
+lr: 0.001
+weight_decay: 0.000001
